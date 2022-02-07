@@ -9,7 +9,8 @@ public class Git_Exercisi {
 		  
 		  System.out.println("Quans casos de prova vols?");
 		  int casos_prova = scanner.nextInt();
-		  nous.proves(casos_prova);
+		  nous.setnCasosdeProva(casos_prova);
+		  nous.proves();
 
 	  }
 	   

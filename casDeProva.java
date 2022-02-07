@@ -4,18 +4,27 @@ public class casDeProva {
 	
 	int nCasosDeProva;
 	
-	public void proves(int casos_prova) {
+	public void setnCasosdeProva(int casos_prova) {
+		// TODO Auto-generated method stub
+		    this.nCasosDeProva = casos_prova;
+	}
+	
+	public int nCasosdeProva() {
+	    return nCasosDeProva;
+	}
+	
+	public void proves() {
 		
 		Scanner scanner = new Scanner(System.in);
 		int casosFets = 0;
 		int numPosats = 0;
 		
-		int [][] mCasos = new int [casos_prova][];
-		int [][] modes = new int [casos_prova][10];
+		int [][] mCasos = new int [nCasosDeProva][];
+		int [][] modes = new int [nCasosDeProva][10];
 		
 		//Creem els arrays i emplenem els arrays
 		
-		while(casosFets <= casos_prova - 1) {
+		while(casosFets <= nCasosDeProva - 1) {
 			System.out.println("Quants numeros vols posar?");
 			int numPerPosar = scanner.nextInt();
 			mCasos[casosFets] = new int[numPerPosar];
@@ -31,7 +40,7 @@ public class casDeProva {
 
 		int modesFetes = 0;
 		
-		while (modesFetes <= casos_prova - 1) {
+		while (modesFetes <= nCasosDeProva - 1) {
 			int maximaDeVegades = 0;
 			String moda = "";
 			int l = 0;
@@ -53,7 +62,7 @@ public class casDeProva {
 		
 		
 		//Eliminar valors duplicats
-		int [][] modesOrdenades = new int [casos_prova][10];
+		int [][] modesOrdenades = new int [nCasosDeProva][10];
 
 		for (int a = 0; a < modes.length; a++) {
 	        int j = 0;
@@ -79,6 +88,8 @@ public class casDeProva {
 		
 		
 	}
+
+	
 	
 }
 
