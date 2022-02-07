@@ -9,7 +9,7 @@ public class casDeProva {
 		    this.nCasosDeProva = casos_prova;
 	}
 	
-	public int nCasosdeProva() {
+	public int getnCasosdeProva() {
 	    return nCasosDeProva;
 	}
 	
